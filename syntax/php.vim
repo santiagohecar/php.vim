@@ -679,6 +679,7 @@ endif
 syn case match
 
 " HereDoc
+if 0
 if version >= 704
   if b:php_version_id >= 70300
     " @begin phpHereDoc
@@ -748,8 +749,10 @@ else
     " @end phpHereDoc
   endif
 endif
+endif
 
 " NowDoc
+if 0
 if version >= 704
   if b:php_version_id >= 70300
   " @begin phpNowDoc
@@ -816,6 +819,7 @@ else
     endif
     " @end phpNowDoc
   endif
+endif
 endif
 
 syn case ignore
